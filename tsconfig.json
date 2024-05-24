@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"target": "ES2020",
+		"useDefineForClassFields": true,
+		"module": "ESNext",
+		"lib": ["ES2020", "DOM", "DOM.Iterable"],
+		"skipLibCheck": true,
+
+		/* Bundler mode */
+		"moduleResolution": "Bundler",
+		"allowImportingTsExtensions": true,
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"noEmit": true,
+
+		/* Linting */
+		"strict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noFallthroughCasesInSwitch": true,
+
+		/* JSX */
+
+		"baseUrl": ".",
+		"paths": {
+			"jsx-factory": ["jsx/jsx-runtime"],
+			"jsx-factory/*": ["jsx/*"]
+		},
+		"jsx": "react-jsx",
+		"jsxImportSource": "jsx-factory"
+	},
+	"include": ["src"]
+}
